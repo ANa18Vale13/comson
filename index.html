@@ -71,57 +71,75 @@
 
             </div>
         </section>
+¡Listo! He integrado las dos postales al final de la misma cuadrícula de la galería del proceso creativo.
 
-        <section id="proceso" class="seccion-contenido">
-            <div style="margin-bottom: 30px; text-align: center;">
-                <p style="color: var(--texto-secundario); font-size: 1.1rem; font-weight: 600;">Documentos del proceso creativo:</p>
-            </div>
-            
-            <div class="galeria-proceso">
-                <div style="text-align:center;">
-                    <img src="https://raw.githubusercontent.com/ANa18Vale13/comson/main/en%20vivo%201.jpeg" alt="Grabación programa en vivo" class="foto-fija">
-                    <p style="font-size:0.82rem; margin-top:8px; color:var(--texto-secundario);">Grabación programa en vivo</p>
-                </div>
-                <div style="text-align:center;">
-                    <img src="https://raw.githubusercontent.com/ANa18Vale13/comson/main/en%20vivo%202.jpeg" alt="Momento de Producción 2" class="foto-fija">
-                    <p style="font-size:0.82rem; margin-top:8px; color:var(--texto-secundario);">Grabación programa en vivo</p>
-                </div>
-                <div style="text-align:center;">
-                    <img src="https://raw.githubusercontent.com/ANa18Vale13/comson/main/ficcion%20sonora%201.jpeg" alt="Momento de Producción 3" class="foto-fija">
-                    <p style="font-size:0.82rem; margin-top:8px; color:var(--texto-secundario);">Proceso creativo ficción sonora</p>
-                </div>
-                <div style="text-align:center;">
-                    <img src="https://raw.githubusercontent.com/ANa18Vale13/comson/main/ficcion%20sonora%202.jpeg" alt="Momento de Production 4" class="foto-fija">
-                    <p style="font-size:0.82rem; margin-top:8px; color:var(--texto-secundario);">Proceso creativo ficción sonora</p>
-                </div>
-                <div style="text-align:center;">
-                    <img src="https://raw.githubusercontent.com/ANa18Vale13/comson/main/ficcion%20sonora%203.jpeg" alt="Momento de Producción 5" class="foto-fija">
-                    <p style="font-size:0.82rem; margin-top:8px; color:var(--texto-secundario);">Proceso creativo ficción sonora</p>
-                </div>
-                <div style="text-align:center;">
-                    <img src="https://raw.githubusercontent.com/ANa18Vale13/comson/main/pieza%201.jpeg" alt="Momento de Producción 6" class="foto-fija">
-                    <p style="font-size:0.82rem; margin-top:8px; color:var(--texto-secundario);">Proceso creativo Pieza experimental</p>
-                </div>
-                <div style="text-align:center;">
-                    <img src="https://raw.githubusercontent.com/ANa18Vale13/comson/main/pieza%202.jpeg" alt="Momento de Producción 7" class="foto-fija">
-                    <p style="font-size:0.82rem; margin-top:8px; color:var(--texto-secundario);">Proceso creativo pieza experimental</p>
-                </div>
-                <div style="text-align:center;">
-                    <img src="https://raw.githubusercontent.com/ANa18Vale13/comson/main/pieza%203.jpeg" alt="Momento de Producción 8" class="foto-fija">
-                    <p style="font-size:0.82rem; margin-top:8px; color:var(--texto-secundario);">Proceso creativo pieza experimental</p>
-                
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; max-width: 950px; margin: 0 auto; text-align: center;">
-                <div>
-                    <img src="https://raw.githubusercontent.com/ANa18Vale13/comson/main/POSTAL%20A.jpg" alt="Imagen de la postal A" style="width: 100%; height: auto; border-radius: 14px; border: 1px solid rgba(166, 139, 117, 0.2); box-shadow: 0 15px 35px rgba(38, 28, 20, 0.1);">
-                </div>
-                <div>
-                    <img src="https://raw.githubusercontent.com/ANa18Vale13/comson/main/POSTAL%20B.jpg" alt="Imagen de la postal B" style="width: 100%; height: auto; border-radius: 14px; border: 1px solid rgba(166, 139, 117, 0.2); box-shadow: 0 15px 35px rgba(38, 28, 20, 0.1);">
-                </div>
-                
-                </div>
-            </div>
-        </section>
+Para que todo funcione con el mismo diseño exacto (mismo tamaño, alineación y efectos de movimiento), les quité los estilos internos que traían (`style="..."`) y les apliqué la clase `class="foto-fija"`. Además, ajusté los textos `alt` y las descripciones para que digan "**Lado A postal**" y "**Lado B postal**" como me pediste, asegurando que cuando las toques también se abran perfectamente en grande con el Lightbox.
 
+Aquí tienes la sección completa actualizada para tu código HTML:
+
+```html
+<section id="proceso" class="seccion-contenido">
+    <div style="margin-bottom: 30px; text-align: center;">
+        <p style="color: var(--texto-secundario); font-size: 1.1rem; font-weight: 600;">Documentos del proceso creativo:</p>
+    </div>
+    
+    <div class="galeria-proceso">
+        
+        <div style="text-align:center;">
+            <img src="https://raw.githubusercontent.com/ANa18Vale13/comson/main/en%20vivo%201.jpeg" alt="Grabación programa en vivo" class="foto-fija">
+            <p style="font-size:0.82rem; margin-top:8px; color:var(--texto-secundario);">Grabación programa en vivo</p>
+        </div>
+
+        <div style="text-align:center;">
+            <img src="https://raw.githubusercontent.com/ANa18Vale13/comson/main/en%20vivo%202.jpeg" alt="Grabación programa en vivo" class="foto-fija">
+            <p style="font-size:0.82rem; margin-top:8px; color:var(--texto-secundario);">Grabación programa en vivo</p>
+        </div>
+
+        <div style="text-align:center;">
+            <img src="https://raw.githubusercontent.com/ANa18Vale13/comson/main/ficcion%20sonora%201.jpeg" alt="Proceso creativo ficción sonora" class="foto-fija">
+            <p style="font-size:0.82rem; margin-top:8px; color:var(--texto-secundario);">Proceso creativo ficción sonora</p>
+        </div>
+
+        <div style="text-align:center;">
+            <img src="https://raw.githubusercontent.com/ANa18Vale13/comson/main/ficcion%20sonora%202.jpeg" alt="Proceso creativo ficción sonora" class="foto-fija">
+            <p style="font-size:0.82rem; margin-top:8px; color:var(--texto-secundario);">Proceso creativo ficción sonora</p>
+        </div>
+
+        <div style="text-align:center;">
+            <img src="https://raw.githubusercontent.com/ANa18Vale13/comson/main/ficcion%20sonora%203.jpeg" alt="Proceso creativo ficción sonora" class="foto-fija">
+            <p style="font-size:0.82rem; margin-top:8px; color:var(--texto-secundario);">Proceso creativo ficción sonora</p>
+        </div>
+
+        <div style="text-align:center;">
+            <img src="https://raw.githubusercontent.com/ANa18Vale13/comson/main/pieza%201.jpeg" alt="Proceso creativo Pieza experimental" class="foto-fija">
+            <p style="font-size:0.82rem; margin-top:8px; color:var(--texto-secundario);">Proceso creativo Pieza experimental</p>
+        </div>
+
+        <div style="text-align:center;">
+            <img src="https://raw.githubusercontent.com/ANa18Vale13/comson/main/pieza%202.jpeg" alt="Proceso creativo pieza experimental" class="foto-fija">
+            <p style="font-size:0.82rem; margin-top:8px; color:var(--texto-secundario);">Proceso creativo pieza experimental</p>
+        </div>
+
+        <div style="text-align:center;">
+            <img src="https://raw.githubusercontent.com/ANa18Vale13/comson/main/pieza%203.jpeg" alt="Proceso creativo pieza experimental" class="foto-fija">
+            <p style="font-size:0.82rem; margin-top:8px; color:var(--texto-secundario);">Proceso creativo pieza experimental</p>
+        </div>
+
+        <!-- ANEXO: Postal Lado A -->
+        <div style="text-align:center;">
+            <img src="https://raw.githubusercontent.com/ANa18Vale13/comson/main/POSTAL%20A.jpg" alt="Lado A postal" class="foto-fija">
+            <p style="font-size:0.82rem; margin-top:8px; color:var(--texto-secundario);">Lado A postal</p>
+        </div>
+
+        <!-- ANEXO: Postal Lado B -->
+        <div style="text-align:center;">
+            <img src="https://raw.githubusercontent.com/ANa18Vale13/comson/main/POSTAL%20B.jpg" alt="Lado B postal" class="foto-fija">
+            <p style="font-size:0.82rem; margin-top:8px; color:var(--texto-secundario);">Lado B postal</p>
+        </div>
+
+    </div>
+</section>
+        
         <section id="productos" class="seccion-contenido">
             <div class="grid-productos">
                 
